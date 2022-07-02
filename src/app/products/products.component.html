@@ -1,0 +1,9 @@
+<p>products works!</p>
+<div class="row">
+    <div class="list-group">
+        <a [routerLink]="['/products',product.id]" *ngFor="let product of products">
+            {{product.description}}
+        </a>
+    </div>
+</div>
+<router-outlet></router-outlet>
